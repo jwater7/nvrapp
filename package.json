@@ -1,0 +1,39 @@
+{
+  "name": "nvrapp",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "debug": "IMAGE_PATH=./debug-data/pics AUTH_PATH=./debug-data/data/auth PRIVATE_KEY=nonvolatile THUMB_PATH=./debug-data/data/thumbs PORT=8000 DEBUG=express,nvrapp:* npm start",
+    "build-debug-frontend": "PUBLIC_URL=/ npm run build-frontend",
+    "build-frontend": "cd frontend; npm run build; cd ..",
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "express-graphql": "^0.6.12",
+    "graphql": "^0.13.2",
+    "morgan": "~1.9.0"
+  },
+  "description": "Displays a simple list with thumbnails of videos produced with security cameras from a directory after authentication",
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jwater7/nvrapp.git"
+  },
+  "keywords": [
+    "thumbnail",
+    "video",
+    "movie",
+    "security",
+    "camera"
+  ],
+  "author": "j",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jwater7/nvrapp/issues"
+  },
+  "homepage": "https://github.com/jwater7/nvrapp#readme"
+}
