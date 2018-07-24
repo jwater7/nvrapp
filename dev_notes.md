@@ -41,13 +41,13 @@ const myGraphQLSchema = new GraphQLSchema({
   }),
 });
 
-app.use('/api/v1/', expressGraphQL({
+app.use('/api/v1/graphql', expressGraphQL({
   schema: myGraphQLSchema,
   graphiql: true,
 }));
 ~~~~
 
-Then navigate to GraphiQL interface at http://localhost:8000/api/v1/
+Then navigate to GraphiQL interface at http://localhost:8000/api/v1/graphql
 paste and run:
 ~~~~
 {
@@ -66,4 +66,5 @@ TODO:
 Useful links:
 * https://github.com/graphql/express-graphql
 * https://github.com/graphql/graphql-js
+* https://github.com/passport/express-4.x-local-example/blob/master/package.json
 
